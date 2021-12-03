@@ -1,0 +1,170 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f3f3;
+  border: none;
+}
+
+.hero {
+  max-width: 864px;
+}
+
+.heroContent {
+  max-width: 530px;
+  margin-top: 120px;
+}
+
+.heroSlogan {
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 80px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #121212;
+}
+
+@media screen and (max-width: 320px) {
+  .heroSlogan {
+    font-size: 32px;
+    line-height: 48px;
+  }
+}
+
+.heroText {
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 34px;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #018fde;
+  border-bottom: 2px solid #d6d6d6;
+  margin-top: 26px;
+}
+
+@media screen and (max-width: 320px) {
+  .heroText {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.description {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+@media screen and (max-width: 320px) {
+  .description {
+    margin-top: 11px;
+    margin-bottom: 64px;
+  }
+}
+
+.descriptionText {
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 164px;
+  color: #3d3d3d;
+  margin-right: 24px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #121212;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  text-align: center;
+  font-family: "Montserrat", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  box-shadow: -3px 2px 1px #838383;
+}
+
+.btn:active {
+  color: #8792a7 !important;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #121212;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.gradRight {
+  position: absolute;
+  width: 272.6px;
+  height: 120px;
+  left: 850px;
+  top: 420px;
+
+  background: linear-gradient(267.33deg, #018fde 19.54%, #072e44 123.71%);
+  opacity: 0.4;
+  filter: blur(110px);
+  transform: rotate(-52.45deg);
+}
+
+.gradLeft {
+  position: absolute;
+  width: 272.6px;
+  height: 200px;
+  left: 185px;
+  top: 200px;
+
+  background: linear-gradient(267.33deg, #018fde 19.54%, #072e44 123.71%);
+  opacity: 0.4;
+  filter: blur(110px);
+  transform: rotate(-52.45deg);
+}
+
+@media screen and (max-width: 1200px) {
+  .gradRight {
+    left: 450px;
+  }
+  .gradLeft {
+    left: 185px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .gradRight {
+    left: 250px;
+  }
+  .gradLeft {
+    left: 185px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .gradRight {
+    display: none;
+  }
+  .gradLeft {
+    left: 15px;
+    height: 100px;
+    width: 172.6px;
+    height: 100px;
+  }
+}
